@@ -95,9 +95,13 @@ h1{font-size:clamp(44px,7vw,78px);line-height:1.02;letter-spacing:-.02em;margin-
 .facts b{color:var(--ink)}
 
 /* Phones */
-.phone{margin:0;position:relative;width:100%;aspect-ratio:414/900;border-radius:13%/6%;padding:3.2%;
-  background:linear-gradient(150deg,#3b3466,#14152E 45%,#2B2250);box-shadow:var(--shadow),inset 0 0 0 1.5px rgba(255,255,255,.1)}
-.phone img{width:100%;height:100%;object-fit:cover;border-radius:11%/5.2%;background:#14152E}
+/* CSS device frame around real 1320x2868 captures (served at 828 px wide). */
+.phone{margin:0;position:relative;width:100%;aspect-ratio:1320/2868;border-radius:14%/6.5%;padding:3%;
+  background:linear-gradient(150deg,#4a4378,#14152E 42%,#2B2250);
+  box-shadow:var(--shadow),inset 0 0 0 1.5px rgba(255,255,255,.14),inset 0 0 0 4px rgba(0,0,0,.35)}
+.phone picture{display:block;width:100%;height:100%}
+.phone img{width:100%;height:100%;object-fit:cover;border-radius:11.5%/5.3%;background:#F3E6CF}
+.phone::after{content:"";position:absolute;left:50%;top:2.55%;width:27%;height:3.5%;transform:translateX(-50%);border-radius:999px;background:#05050c;pointer-events:none}
 .hero-art{position:relative;display:flex;justify-content:center;gap:5%;align-items:flex-start;max-width:520px;margin:0 auto;width:100%}
 .hero-art .phone{width:46%}
 .hero-art .phone:nth-child(2){margin-top:12%}
@@ -231,11 +235,11 @@ h1{font-size:clamp(44px,7vw,78px);line-height:1.02;letter-spacing:-.02em;margin-
 .foot-base{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
 
 /* Document pages (privacy, terms, support, about, data) */
-.page-hero{padding:56px 0 18px}
+.page-hero{padding-top:56px;padding-bottom:18px}
 .page-hero h1{font-size:clamp(38px,6vw,58px);margin-bottom:12px}
 .page-hero .sub{margin-top:6px}
 .meta{color:var(--mute);font-size:15px;margin-top:10px}
-.doc{padding:20px 0 88px}
+.doc{padding-top:20px;padding-bottom:88px}
 .doc h2{font-size:clamp(24px,3vw,30px);margin:48px 0 12px;scroll-margin-top:80px}
 .doc h3{font-size:19px;margin:28px 0 8px}
 .doc p,.doc li{color:var(--dim)}
@@ -261,6 +265,33 @@ h1{font-size:clamp(44px,7vw,78px);line-height:1.02;letter-spacing:-.02em;margin-
 @media (min-width:640px){.principles{grid-template-columns:1fr 1fr}}
 .principles li{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 20px;margin:0!important}
 .principles b{display:block;font:600 19px/1.3 var(--serif);color:var(--ink);margin-bottom:4px}
-.lost{padding:90px 0 110px}
+.lost{padding-top:90px;padding-bottom:110px}
 .lost .hero-mark{width:96px;height:96px;margin:0 auto 26px}
 .lost h1{font-size:clamp(40px,6vw,64px)}
+
+/* Press kit and accessibility pages */
+.spec{width:100%;border-collapse:collapse;margin-top:18px;font-size:16px}
+.spec th,.spec td{text-align:left;vertical-align:top;padding:12px 0;border-top:1px solid var(--line)}
+.spec th{width:36%;padding-right:16px;color:var(--ink);font-weight:600}
+.spec td{color:var(--dim)}
+.assets{display:grid;gap:16px;margin-top:20px;list-style:none;padding:0}
+@media (min-width:640px){.assets{grid-template-columns:1fr 1fr}}
+.assets li{margin:0!important;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.assets .swatch{display:grid;place-items:center;aspect-ratio:2/1;padding:18px}
+.assets .swatch.dark{background:linear-gradient(180deg,#14152E,#2B2250)}
+.assets .swatch.plain{background:var(--bg2)}
+.assets .swatch.light{background:#FBF5EA;box-shadow:inset 0 -1px 0 var(--line)}
+.assets .swatch img{max-height:100%;width:auto}
+.assets .swatch img.icon{height:120px;width:120px;border-radius:22.5%}
+.assets .cap{padding:14px 18px 16px}
+.assets .cap b{display:block;color:var(--ink);font:600 17px/1.3 var(--serif)}
+.assets .cap span{font-size:14px;color:var(--mute)}
+.assets .cap a{font-size:15px;font-weight:600;margin-right:14px}
+.shot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 16px;margin-top:22px;list-style:none;padding:0}
+@media (min-width:640px){.shot-grid{grid-template-columns:repeat(4,1fr)}}
+.shot-grid li{margin:0!important;text-align:center;font-size:14px;color:var(--mute)}
+.shot-grid .phone{margin-bottom:10px}
+.download-row{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:22px}
+.boiler{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:14px}
+.boiler p{color:var(--ink)}
+.doc .assets,.doc .shot-grid{padding-left:0}
