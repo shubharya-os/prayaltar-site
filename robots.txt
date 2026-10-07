@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /get/
+Disallow: /tools/
+
+Sitemap: https://prayaltar.com/sitemap.xml

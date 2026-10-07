@@ -1,18 +1,112 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Altar — Support</title><link rel="icon" href="/icon.png">
-<style>
-:root{--bg:#FBF5EA;--ink:#24204A;--muted:#5c5778;--gold:#B9852F}
-@media (prefers-color-scheme:dark){:root{--bg:#14152E;--ink:#F6EEDC;--muted:#b7b0cf;--gold:#E0A64B}}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 ui-serif,"New York",Georgia,serif}
-main{max-width:680px;margin:0 auto;padding:48px 20px 80px}
-h1{font-size:2.1rem;line-height:1.2;margin:.2em 0 .6em}h2{font-size:1.25rem;margin-top:2em}
-a{color:var(--gold)}.muted{color:var(--muted);font-size:.95rem}header a{text-decoration:none;color:var(--ink);font-weight:600}
-header img{width:36px;height:36px;border-radius:9px;vertical-align:middle;margin-right:10px}
-</style></head><body><main><header><a href="/"><img src="/icon.png" alt="">Altar</a></header>
-<h1>Support</h1>
-<p>Email <a href="mailto:hello@prayaltar.com">hello@prayaltar.com</a> and a real person will reply.</p>
-<h2>Prayer Lock isn't blocking anything</h2><p>Open Altar › Lock › Allow Screen Time, approve the Screen Time prompt, then choose apps. Check that Prayer Lock is switched on and that you are inside a lock window.</p>
-<h2>I'm locked out</h2><p>Open the blocked app, tap <em>Open Altar</em>, and either complete the unlock rule or use Emergency unlock (available after its cooldown). You can also switch Prayer Lock off in Altar › Lock at any time.</p>
-<h2>Restore Altar+</h2><p>Altar › Me › Settings › Restore Purchases, signed in with the same Apple Account.</p>
-<h2>Cancel a subscription</h2><p>Settings › Apple Account › Subscriptions › Altar.</p>
-<p class="muted" style="margin-top:3em"><a href="/support">Support</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · © 2026 ELAQ Limited</p></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Support — Altar</title>
+<meta name="description" content="Help with Altar: setting up Prayer Lock, getting unlocked, restoring or cancelling Altar+, widgets, wallpapers, translations, streaks and challenges.">
+<link rel="canonical" href="https://prayaltar.com/support">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FBF5EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14152E" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Altar">
+<meta property="og:url" content="https://prayaltar.com/support">
+<meta property="og:title" content="Support — Altar">
+<meta property="og:description" content="Help with Altar: setting up Prayer Lock, getting unlocked, restoring or cancelling Altar+, widgets, wallpapers, translations, streaks and challenges.">
+<meta property="og:image" content="https://prayaltar.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Altar mark, a flame inside an arch, beside the words: Pray first. Stop doomscrolling.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Support — Altar">
+<meta name="twitter:description" content="Help with Altar: setting up Prayer Lock, getting unlocked, restoring or cancelling Altar+, widgets, wallpapers, translations, streaks and challenges.">
+<meta name="twitter:image" content="https://prayaltar.com/og.png">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<svg class="sr" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="arch-grad" x1="0" y1="268" x2="0" y2="816" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:var(--arch1)"/><stop offset="1" style="stop-color:var(--arch2)"/></linearGradient>
+    <linearGradient id="gold-grad" x1="0" y1="268" x2="0" y2="816" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE3A3"/><stop offset="1" stop-color="#E0A64B"/></linearGradient>
+    <linearGradient id="flame-grad" x1="0" y1="392" x2="0" y2="712" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF6DC"/><stop offset=".6" stop-color="#FFC56B"/><stop offset="1" stop-color="#F08A3C"/></linearGradient>
+    <g id="altar-flame" transform="translate(0,-26)"><path d="M512,384 C548,452 608,516 608,612 C608,668 566,712 512,712 C458,712 416,668 416,612 C416,556 446,522 472,478 C482,512 494,530 514,540 C500,494 492,440 512,384 Z" fill="url(#flame-grad)"/><path d="M514,540 C540,580 558,604 558,640 C558,668 538,690 512,690 C486,690 466,668 466,640 C466,612 482,592 494,572 C500,586 506,592 516,596 C510,578 508,560 514,540 Z" fill="#FFFBEF" opacity=".9"/></g>
+    <g id="altar-mark"><path transform="translate(0,-26)" d="M302,792 V478 A210,210 0 0 1 722,478 V792 M236,792 H788" fill="none" stroke="url(#arch-grad)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/><use href="#altar-flame"/></g>
+    <g id="altar-mark-gold"><path transform="translate(0,-26)" d="M302,792 V478 A210,210 0 0 1 722,478 V792 M236,792 H788" fill="none" stroke="url(#gold-grad)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/><use href="#altar-flame"/></g>
+  </defs>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="Altar home"><svg class="mark" viewBox="206 190 612 612" aria-hidden="true"><use href="#altar-mark"/></svg><span>Altar</span></a>
+    <nav class="links" aria-label="Sections">
+      <a href="/#how">How it works</a>
+      <a href="/#prayer-lock">Prayer Lock</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/support">Support</a>
+    </nav>
+    <a class="pill small" href="/get/?ct=site-support">Get Altar</a>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero wrap narrow">
+  <p class="eyebrow">Support</p>
+  <h1>How can we <span class="gold-text">help?</span></h1>
+  <p class="sub">Answers to the common questions. If yours isn’t here, email <a href="mailto:hello@prayaltar.com">hello@prayaltar.com</a> and a person will read it.</p>
+</section>
+<div class="doc wrap narrow">
+<h2 id="prayer-lock">Prayer Lock</h2>
+<div class="faq">
+<details id="lock-setup"><summary>How do I set up Prayer Lock?</summary><div><p>Open the <strong>Lock</strong> tab and tap <strong>Allow Screen Time</strong>. iOS asks you to confirm. Then tap <strong>Choose apps</strong>, pick the apps (or whole categories) you want to keep closed, and turn <strong>Prayer Lock</strong> on.</p><p>On the free plan the lock is on all day and unlocks when you read 3 verses. In the same tab you can choose how long an unlock lasts (5, 15 or 30 minutes) and how many unlocks you get a day (1 to 20, 5 by default). Altar+ adds more schedules, such as overnight, and the pray-for-60-seconds and recite-a-verse rules.</p><p>Tap <strong>Preview the shield</strong> to see what a locked app will show.</p></div></details>
+<details id="allow-fails"><summary>“Needs Screen Time permission” won’t go away</summary><div><p>Screen Time access has to be allowed by the person who owns the iPhone. Check that Screen Time is available in Settings › Screen Time. If this iPhone is managed by a parent through Family Sharing, or by an employer or school, they may need to allow it. Then try <strong>Allow Screen Time</strong> again.</p></div></details>
+<details id="open-altar"><summary>I tapped Open Altar on the lock screen and nothing happened</summary><div><p>iOS doesn’t let the lock screen open another app directly, so Altar sends you a notification that says “Pray first”. Tap it to go straight to your unlock. If you’ve turned off Altar’s notifications, just open Altar yourself and go to <strong>Lock › Unlock</strong>. You can turn notifications back on in Settings › Notifications › Altar.</p></div></details>
+<details id="locked-out"><summary>I’m locked out and need an app now</summary><div><p>You always have a way out:</p><ul><li><strong>Emergency unlock.</strong> Once today’s unlocks are used, Altar offers an emergency unlock that opens your apps for 5 minutes. You can take one every hour.</li><li><strong>Turn Prayer Lock off.</strong> Open Altar’s Lock tab and switch Prayer Lock off. Your apps open right away.</li><li><strong>Remove Screen Time access.</strong> In Settings › Screen Time, remove Altar’s access, or delete Altar. Either one removes all of Altar’s locks.</li></ul><p>Please don’t lock apps you might need in an emergency.</p></div></details>
+<details id="lock-not-applying"><summary>A locked app opened anyway, or stayed locked too long</summary><div><p>Prayer Lock relies on iOS Screen Time, which can occasionally lag. Open Altar once so it can refresh your locks, and make sure Screen Time is still allowed. Restarting your iPhone after an iOS update often helps. If it keeps happening, email us with your iOS version and what you saw.</p></div></details>
+</div>
+<h2 id="altarplus-and-purchases">Altar+ and purchases</h2>
+<div class="faq">
+<details id="restore"><summary>How do I restore Altar+ on a new iPhone?</summary><div><p>Sign in with the same Apple Account, then open Altar and go to <strong>Me › Settings › Restore Purchases</strong>. The paywall also has a Restore Purchases button. There is no Altar account; your purchase belongs to your Apple Account.</p></div></details>
+<details id="cancel"><summary>How do I cancel Altar+?</summary><div><p>Open <strong>Settings</strong> on your iPhone, tap your name, then <strong>Subscriptions</strong>, choose Altar+, and tap Cancel Subscription. Cancel at least 24 hours before your renewal date to avoid the next charge. You keep Altar+ until the end of the period you’ve paid for. To cancel a free trial without being charged, cancel at least 24 hours before the 3 days are up.</p></div></details>
+<details id="refund"><summary>Can I get a refund?</summary><div><p>Apple handles all payments and refunds, so we can’t issue them ourselves. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></div></details>
+</div>
+<h2 id="widgets-and-wallpapers">Widgets and wallpapers</h2>
+<div class="faq">
+<details id="widgets"><summary>How do I add a widget?</summary><div><p>Touch and hold an empty part of your Home Screen, tap <strong>Edit</strong> then <strong>Add Widget</strong>, and search for Altar. Choose Verse of the Day (small, medium or large) or Streak. For the Lock Screen, touch and hold the Lock Screen, tap <strong>Customize</strong>, choose the Lock Screen, and add Altar’s widget there. Lock Screen widgets need Altar+.</p><p>If a widget looks out of date, open Altar once; widgets refresh from the app.</p></div></details>
+<details id="wallpapers"><summary>How do I set a verse wallpaper?</summary><div><p>Go to <strong>Me › Wallpapers</strong>, choose a verse and a theme, and tap <strong>Save to Photos</strong>. Altar asks for add-only access the first time; it can’t see your other photos. Then open Photos, choose the image, tap the share button and pick <strong>Use as Wallpaper</strong>.</p><p>If saving fails, allow “Add Photos Only” for Altar in Settings › Privacy &amp; Security › Photos. Dawn and Linen are free; the other themes come with Altar+.</p></div></details>
+</div>
+<h2 id="reading-and-streaks">Reading and streaks</h2>
+<div class="faq">
+<details id="translations"><summary>How do I switch translations?</summary><div><p>Tap the translation button (KJV or WEB) at the top of the <strong>Read</strong> tab, or change it in <strong>Me › Settings</strong>. Altar includes the King James Version and the World English Bible, both complete and both offline. We only include public-domain translations, so modern copyrighted ones such as the NIV or ESV aren’t available.</p></div></details>
+<details id="streaks"><summary>How do streaks and freezes work?</summary><div><p>Your streak grows each day you meet your daily goal, a number of verses or minutes you set. Days follow your iPhone’s local time, including when you travel or the clocks change.</p><p>With Altar+ you get 2 streak freezes a month. If you miss a single day, Altar uses a freeze to cover it when you open the app the following day, so your streak carries on. Frozen days show on your streak calendar.</p></div></details>
+<details id="challenges"><summary>How do the challenges work?</summary><div><p>Find them under <strong>Me › Challenges</strong>. Advent 2026 runs from 29 November to 24 December; Lent 2027 from Ash Wednesday, 10 February, to Easter Sunday, 28 March. 40 Days Off Doomscrolling can be started any day.</p><p>Each day has a reading, a prayer prompt and a Prayer Lock goal. Mark a day read on the day or within 3 days after to catch up. The current season is free; past seasons are in the Archive with Altar+.</p></div></details>
+<details id="reminders"><summary>How do I get a daily reminder?</summary><div><p>Go to <strong>Me › Settings › Reminders</strong>. Turn on the morning verse and pick a time, turn on the 8 pm streak saver if you like, and tap <strong>Apply</strong>. Reminders are scheduled on your iPhone; nothing is sent from a server.</p></div></details>
+</div>
+<h2 id="privacy-and-data">Privacy and data</h2>
+<div class="faq">
+<details id="move-data"><summary>Can I move my streak and journal to a new iPhone?</summary><div><p>Altar has no account or server, so there’s nothing to sync. Your data moves with an iCloud or computer backup of your iPhone when you restore the new one from it. If you set up the new iPhone as new, Altar starts fresh.</p></div></details>
+<details id="delete-data"><summary>How do I delete my data?</summary><div><p>Delete the Altar app. That erases everything it stored on your iPhone. We hold nothing on our side. See <a href="/data">Your data</a> for details.</p></div></details>
+</div>
+<div class="contact-card">
+  <div><strong>Write to us</strong><p>Tell us your iPhone model and iOS version, and what you were trying to do. Please don’t send passwords or payment details.</p></div>
+  <a class="pill" href="mailto:hello@prayaltar.com">hello@prayaltar.com</a>
+</div>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="/"><svg class="mark" viewBox="206 190 612 612" aria-hidden="true"><use href="#altar-mark"/></svg><span>Altar</span></a>
+      <p>Pray first. Stop doomscrolling. Scripture you scroll, a Prayer Lock for the apps that pull you in, and verse wallpapers. For iPhone.</p>
+    </div>
+    <nav aria-label="Company"><h2>Company</h2><a href="/about">About</a><a href="/support">Support</a><a href="mailto:hello@prayaltar.com">hello@prayaltar.com</a></nav>
+    <nav aria-label="Your data"><h2>Your data</h2><a href="/data">Where your data lives</a><a href="/data#screen-time">Revoke Screen Time</a><a href="/data#subscriptions">Manage Altar+</a></nav>
+    <nav aria-label="Legal"><h2>Legal</h2><a href="/privacy">Privacy policy</a><a href="/terms">Terms of use</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a></nav>
+  </div>
+  <div class="wrap foot-base"><p>© 2026 ELAQ Limited</p><p>No cookies. No analytics. No account.</p></div>
+</footer>
+</body>
+</html>
